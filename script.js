@@ -3,8 +3,6 @@ let quoteText = document.getElementById('quoteText');
 let authorText = document.getElementById('auhtorName');
 let twitterBtn = document.getElementById('twitter-button');
 let newQuoteBtn = document.getElementById('new-quote');
-//let apiQuotes = [];
-
 function newQuote() {
     //pick  a random quote
     let quote = localQuotes[Math.floor(Math.random() * localQuotes.length)];
@@ -28,7 +26,6 @@ function shareQuote() {
     const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent}`;
     window.open(twitterUrl, '_blank');
 }
-
 
 //event listner
 newQuoteBtn.addEventListener("click", newQuote);
