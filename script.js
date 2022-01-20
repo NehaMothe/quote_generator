@@ -33,18 +33,4 @@ function shareQuote() {
 //event listner
 newQuoteBtn.addEventListener("click", newQuote);
 twitterBtn.addEventListener("click", shareQuote);
-
-// Get quotes from API
-// async function getQuotes() {
-//     const apiURL = 'https://type.fit/api/quotes';
-//     try {
-//         const response = await fetch(apiURL);
-//         apiQuotes = await response.json();
-//         newQuote();
-//     } catch (error) {
-//         //error handled
-//     }
-// };
-// on load
-//getQuotes();
 newQuote();
