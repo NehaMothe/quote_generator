@@ -9,8 +9,8 @@ function newQuote() {
     //pick  a random quote
     let quote = localQuotes[Math.floor(Math.random() * localQuotes.length)];
     //if author if unknown
-    if (quote.author == null) {
-        authorText.textContent == 'Unknown';
+    if (!quote.author) {
+        authorText.textContent = 'Unknown';
     }
     else {
         authorText.textContent = quote.author;
